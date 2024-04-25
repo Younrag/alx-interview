@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import math
-fact = math.factorial
 """
 pascal triangle
 """
+import math
+fact = math.factorial
 
 
 def pascal_triangle(n):
