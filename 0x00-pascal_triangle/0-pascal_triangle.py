@@ -2,14 +2,14 @@
 """
 pascal triangle
 """
-import math
-fact = math.factorial
 
 
 def pascal_triangle(n):
     """
     create triangle
     """
+    import math
+    fact = math.factorial
     i = 0
     T = []
     if n <= 0:
