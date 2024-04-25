@@ -13,7 +13,7 @@ def pascal_triangle(n):
     i = 0
     T = []
     if n <= 0:
-        return [[]]
+        return T
     while i < n:
         row = [int(fact(i) / (fact(j) * fact(i - j))) for j in range(0, i + 1)]
         T.append(row)
