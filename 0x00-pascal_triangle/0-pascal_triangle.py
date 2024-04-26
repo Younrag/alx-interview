@@ -15,7 +15,7 @@ def pascal_triangle(n):
     if n <= 0:
         return T
     while i < n:
-        row = [int(fact(i) / (fact(j) * fact(i - j))) for j in range(0, i + 1)]
+        row = [fact(i) // (fact(j) * fact(i - j)) for j in range(0, i + 1)]
         T.append(row)
         i = i + 1
     return T
