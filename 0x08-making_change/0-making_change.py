@@ -3,7 +3,7 @@
 Change comes from within
 """
 
-def make_change(coins, total):
+def makeChange(coins, total):
   """
   Calculates the minimum number of coins needed to make a certain amount of money.
   """
