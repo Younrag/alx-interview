@@ -7,7 +7,7 @@ def make_change(coins, total):
   """
   Calculates the minimum number of coins needed to make a certain amount of money.
   """
-  if total == 0:
+  if total <= 0:
         return 0
 
     remainder = total
@@ -17,7 +17,9 @@ def make_change(coins, total):
     list_len = len(coins)
     coin_index = 0
 
-    while remainder > 0 and coin_index < list_len:
+    while remainder > 0: 
+        if coin_index >= list_len:
+            return -1
         if remainder - sorted_coins_list[coin_index] >= 0:
             remainder -= sorted_coins_list[coin_index]
             coins_needed += 1
